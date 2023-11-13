@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <div>
-        <h1>Your App</h1>
+        <h1>React LiveEditor</h1>
         <DynamicTabsSimulator />
         {/* <LiveDemo /> */}
       </div>
