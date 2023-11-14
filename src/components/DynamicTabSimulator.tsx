@@ -1,7 +1,7 @@
 // DynamicTabsSimulator.tsx
 import React, { useState } from 'react';
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
-import { Button, Input, TextareaAutosize, Box, Tab, Tabs } from '@mui/material';
+import { Button, Input, TextareaAutosize, Box, Tab, Tabs, Typography } from '@mui/material';
 
 export default function DynamicTabsSimulator() {
   const [code, setCode] = useState(
@@ -38,7 +38,7 @@ export default function DynamicTabsSimulator() {
     setTabValue(newValue);
   };
 
-  const scope = { Button, Input, TextareaAutosize, Box, Tab, Tabs };
+  const scope = { Button, Input, TextareaAutosize, Box, Tab, Tabs, Typography };
 
   return (
     <div>
