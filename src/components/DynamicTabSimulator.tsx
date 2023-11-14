@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
 import { Button, Input, TextareaAutosize, Box, Tab, Tabs, Typography } from '@mui/material';
+import PropTypes from 'prop-types';
 
 export default function DynamicTabsSimulator() {
   const [code, setCode] = useState(
@@ -38,7 +39,7 @@ export default function DynamicTabsSimulator() {
     setTabValue(newValue);
   };
 
-  const scope = { Button, Input, TextareaAutosize, Box, Tab, Tabs, Typography };
+  const scope = { Button, Input, TextareaAutosize, Box, Tab, Tabs, Typography, PropTypes };
 
   return (
     <div>
